@@ -1,5 +1,6 @@
+// https://aka.ms/devcontainer.json
 {
-	"name": "Laravel12 Container",
+	"name": "laravel12 Dev Container",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
@@ -8,24 +9,29 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"bmewburn.vscode-intelephense-client",
-				"neilbrayfield.php-docblocker",
-				"xdebug.php-debug",
 				"mikestead.dotenv",
+				"bmewburn.vscode-intelephense-client",
 				"amiralizadeh9480.laravel-extra-intellisense",
-				"ryannaddy.laravel-artisan",
 				"onecentlin.laravel5-snippets",
 				"onecentlin.laravel-blade",
-				"austenc.laravel-blade-spacer",
-				"codingyu.laravel-goto-view",
-				"pgl.laravel-jump-controller",
-				"bradlc.vscode-tailwindcss",
 				"shufo.vscode-blade-formatter",
-				"streetsidesoftware.code-spell-checker"
+				"codingyu.laravel-goto-view",
+				"open-southeners.laravel-pint",
+				"bradlc.vscode-tailwindcss",
+				"streetsidesoftware.code-spell-checker",
+				"neilbrayfield.php-docblocker",
+				"seatonjiang.gitmoji-vscode",
+				"open-southeners.laravel-pint",
+				"damms005.devdb",
+				"st-pham.php-refactor-tool",
+				"Gruntfuggly.todo-tree"
 			],
 			"settings": {}
 		}
 	},
 	"remoteUser": "sail",
-	"postCreateCommand": "chown -R 1000:1000 /var/www/html 2>/dev/null || true"
+	"postCreateCommand": "chown -R 1000:1000 /var/www/ike100 2>/dev/null || true"
+	// "forwardPorts": [],
+	// "runServices": [],
+	// "shutdownAction": "none",
 }
